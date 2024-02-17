@@ -17,4 +17,4 @@ Extensions I use:
 
 A C Pico project requires additional files to handle compilation: CMakeList.txt and pico_sdk_import.cmake, templates of both available in the installed pico sdk. To automate this, I use [Pico Project Generator](https://github.com/raspberrypi/pico-project-generator). 
 
-![](https://git.pvnweb.dedyn.io/phanipavank/RPi_Pico_Resources/raw/branch/master/assets/picoProjGen.png)
+<img src="https://git.pvnweb.dedyn.io/phanipavank/RPi_Pico_Resources/raw/branch/master/assets/picoProjGen.png" width="300">
