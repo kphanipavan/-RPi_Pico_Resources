@@ -1,4 +1,4 @@
-## Programming Setup
+## Programming Software Setup
 
 ### Dev Envitonment
 
@@ -17,4 +17,32 @@ Extensions I use:
 
 A C Pico project requires additional files to handle compilation: CMakeList.txt and pico_sdk_import.cmake, templates of both available in the installed pico sdk. To automate this, I use [Pico Project Generator](https://github.com/raspberrypi/pico-project-generator). 
 
-<img src="https://git.pvnweb.dedyn.io/phanipavank/RPi_Pico_Resources/raw/branch/master/assets/picoProjGen.png" width="300">
+<img src="../assets/picoProjGen.png" width="300">
+
+### Uploading Code
+
+Currently I program the pico over USB connection, and to do so, 
+- the USB has to be unplugged
+- The button on the board has to be held down to put the board into programming mode
+- USB has to be plugged back in and the button can be released
+
+This will wear-out the port upon time. To solve this, the `RUN` pin #30 can be pulled down/connect to `GND` to reset the board. I use a button to acomplish that, from now on called the reset button, as seen below.
+
+<img src="../assets/picoResetButton.png" width=300>
+
+So uploading the code requires following steps:
+
+- Press and hold reset button (2)
+- Press and hold bootloader button (1)
+- Release reset button (2)
+- Release bootloader button (1)
+
+This will mount the pico as a storage device, to where the generated `.UF2` file should be copied.
+
+
+
+## Hardware Setup
+
+I have the RaspberryPi Pico Non-W variant: without the wireless chip. Soldered male jumper headers and mounted it onto a large breadboard. I am using solid copper wires for connections, because they stay in set shape.
+
+I am using a button as mentioned above to upload the program.
