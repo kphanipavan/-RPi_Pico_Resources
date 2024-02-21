@@ -2,7 +2,7 @@
 
 ### Dev Envitonment
 
-Nobara 39 on a hand-me-down dual core dell laptop. An RPi Pico, programming over usb cable. Some wires, buttons, LEDs and resistors I <b>Borrowed</b> from lab.
+Nobara/Fedora 39 on a hand-me-down dual core dell laptop. An RPi Pico, programming over usb cable. Some wires, buttons, LEDs and resistors I <b>Borrowed</b> from lab.
 
 ### Code Editor
 Instead of using Arduino IDE, I use Visual Studio Code for programming. I use it because I (seem to) write code more efficiently and because I have it customized it to my liking.
@@ -15,7 +15,7 @@ Extensions I use:
 
 ### Project Generation
 
-A C Pico project requires additional files to handle compilation: CMakeList.txt and pico_sdk_import.cmake, templates of both available in the installed pico sdk. To automate this, I use [Pico Project Generator](https://github.com/raspberrypi/pico-project-generator). 
+A C Pico project requires additional files to handle compilation: CMakeList.txt and pico_sdk_import.cmake, templates of both available in the installed pico sdk. To automate this, I am using [Pico Project Generator](https://github.com/raspberrypi/pico-project-generator) to generate the boilerplate code for the project. Most of the options are left default. The only changes are: `Console over USB` and `Create VSCode Project` are enabled.
 
 <img src="../assets/picoProjGen.png" width="300">
 
@@ -38,7 +38,6 @@ So uploading the code requires following steps:
 - Release bootloader button (1)
 
 This will mount the pico as a storage device, to where the generated `.UF2` file should be copied.
-
 
 
 ## Hardware Setup
