@@ -42,7 +42,7 @@ int main()
 
 `gpio_put(OnBoardLED, true)`: Set `OnBoardLED` pin to `on` (`true` to turn on/set to high/voltage to VDD, `false` to turn off/set to low/voltage to GND)
 
-Pico login HIGH voltage is 3.3v and LOW voltage is 0v.
+Pico logic HIGH voltage is 3.3v and LOW voltage is 0v.
 
 `sleep_ms(500)`: sleep for 500ms.
 
