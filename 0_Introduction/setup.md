@@ -17,7 +17,7 @@ Extensions I use:
 
 A C Pico project requires additional files to handle compilation: CMakeList.txt and pico_sdk_import.cmake, templates of both available in the installed pico sdk. To automate this, I am using [Pico Project Generator](https://github.com/raspberrypi/pico-project-generator) to generate the boilerplate code for the project. Most of the options are left default. The only changes are: `Console over USB` and `Create VSCode Project` are enabled.
 
-<img src="../assets/picoProjGen.png" width="300">
+<img src="https://a.l3n.co/i/722InF.md.png" width="300">
 
 ### Uploading Code
 
@@ -28,7 +28,7 @@ Currently I program the pico over USB connection, and to do so,
 
 This will wear-out the port upon time. To solve this, the `RUN` pin #30 can be pulled down/connect to `GND` to reset the board. I use a button to acomplish that, from now on called the reset button, as seen below.
 
-<img src="../assets/picoResetButton.png" width=300>
+<img src="https://b.l3n.co/i/722tOD.png" width=300>
 
 So uploading the code requires following steps:
 

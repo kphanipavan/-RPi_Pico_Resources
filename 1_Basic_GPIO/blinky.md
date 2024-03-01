@@ -8,7 +8,7 @@ The classic, the helloWorld of embedded programming. This program turns the LED 
 - Build the project by pressing the `build` button at the bottom and select the option with `arm-none-eabi`.
 - Make sure the build exits with code 0.
 
-<img src="../assets/buildButton.png" width="300">
+<img src="https://c.l3n.co/i/7220Vr.png" width="300">
 
 ### Basic Code:
 
