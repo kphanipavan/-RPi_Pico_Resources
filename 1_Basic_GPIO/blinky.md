@@ -6,9 +6,10 @@ The classic, the helloWorld of embedded programming. This program turns the LED 
 - Create new project with project generator.
 - Open the project folder in VSCode.
 - Build the project by pressing the `build` button at the bottom and select the option with `arm-none-eabi`.
+- Then, build target can be changed to just the project name, as seen below.
 - Make sure the build exits with code 0.
 
-<img src="https://a.l3n.co/i/O82htM.png" width="300">
+<img src="https://c.l3n.co/i/OW219o.png" width="300">
 
 ### Basic Code:
 
