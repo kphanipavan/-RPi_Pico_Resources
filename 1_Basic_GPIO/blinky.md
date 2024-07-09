@@ -76,19 +76,21 @@ Do note that `15` is `GP15`, which is the same as `PIN20`, located at the bottom
 
 ## 3. Pull Up and Pull Down Modes
 
-Digital output mode supports setting the drive modes.
+Digital output mode supports setting different internal pull up and pull down modes. Pull up mode ensures the pin to stay at logic HIGH when nothing is connected to that pin. Same goes for pull down mode, it ensures the pin to stay at logic LOW when nothing is connected. [More info can be found in EEPower's blog](https://eepower.com/resistor-guide/resistor-applications/pull-up-resistor-pull-down-resistor).
+
+Pull up and down resistors internal to the RP2040 IC vary in value between 50kΩ and 80kΩ [as stated in RP2040 Datasheet, table 625](https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf). *need to add why it varies*
 
  *Add more details*
 
 ## 4. Drive Strengths
 
-Current limit can be changed for additional protection.
+Current limit can be changed for additional protection against momentary or sustained current spikes. Current limit defaults to 4mA [as stated in section 2.19.4 Pads](https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf)
 
 *Add more details*
 
 ## 5. Loading Indicator using LEDs
 
-Control multiple LEDs on multiple GPIOs to show bouncing led.
+Control multiple LEDs on multiple GPIOs to show bouncing led. This project configures 5 GPIO ports as digital out and set them to a 4mA drive strength.
 
 *Add more details*
 
